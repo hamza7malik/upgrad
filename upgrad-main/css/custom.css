@@ -1,0 +1,23 @@
+.slick-list .draggable{
+    padding: 0 !important;
+  }
+  .slick-slide .slick-current .slick-center{
+    margin: 0;
+    width: 30% !important;
+  }
+  .slick-slide .slick-current .slick-center{
+    width: 30%;
+  }
+  .slide-count{display: none !important;}
+  .slider-btn{
+    width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        /* position: absolute; */
+        /* bottom: 20px; */
+        z-index: 1;
+        background-color: #E95454;
+        color: #fff;
+        display: flex; justify-content: center; align-items: center;
+  }
