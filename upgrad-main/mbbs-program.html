@@ -16,12 +16,73 @@
         rel="stylesheet" type="text/css" />
     <link href="https://db.onlinewebfonts.com/c/02d8f1743ede250c7c9865f1574d7cc6?family=Circular+Book" rel="stylesheet"
         type="text/css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">ENQUIRE NOW</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="name" value="" class="form-control my-2" placeholder="Name">
+                        <input type="email" name="email" value="" class="form-control my-2" placeholder="Email">
+                        <input type="number" name="number" value="" class="form-control my-2" placeholder="Number">
+                        <p class="radiotext mb-0">Program of Interest</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Global MD
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option1">
+                            <label class="form-check-label" for="exampleRadios2">
+                                MBBS
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn btn-primary modal-btn d-block my-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="semesterModal" tabindex="-1" aria-labelledby="semesterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Semester 1, 2, 3, 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <ul class="custom-list">
+                        <li>Community Medicine</li>
+                        <li>Forensic Medicine</li>
+                        <li>Pathology</li>
+                        <li>Pharmacology</li>
+                        <li>Microbiology</li>
+                        <li>Clinical Posting</li>
+                        <li>OPD Practice</li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modal-btn d-block my-2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- --------header--------- -->
     <header class="header">
         <div class="container">
@@ -67,22 +128,7 @@
                                         study at uims
                                     </a>
                                     <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-1">
-                                        <li>
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1-1"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Overview
-                                            </a>
-                                            <ul class="dropdown-menu menu-level-2 dropdown-submenu"
-                                                aria-labelledby="navbarDropdown-1-1">
-                                                <li><a class="dropdown-item" routerLink="about">Vision, Mission &
-                                                        Values</a>
-                                                </li>
-                                                <li><a class="dropdown-item" routerLink="accrediations">Recognition and
-                                                        Accreditation</a></li>
-                                                <li><a class="dropdown-item" routerLink="accrediations">Vila Central
-                                                        Hospital</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a class="dropdown-item" href="campus">Overview</a></li>
                                         <li><a class="dropdown-item" href="campus">About Campus</a></li>
                                         <li><a class="dropdown-item" routerLink="partner">Partner with us</a></li>
                                     </ul>
@@ -107,72 +153,18 @@
                                         FACULTY
                                     </a>
                                     <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-5">
-                                        <li><a class="dropdown-item" routerLink="globalmd">Global MD</a></li>
-                                        <li><a class="dropdown-item" routerLink="mbbs">MBBS</a></li>
-                                        <li><a class="dropdown-item" routerLink="qualitypolicy">Quality Policy</a></li>
+                                        <li><a class="dropdown-item" href="global-md-program.html">Global MD</a></li>
+                                        <li><a class="dropdown-item" href="mbbs-program.html">MBBS</a></li>
+                                        <li><a class="dropdown-item" href="#!">Quality Policy</a></li>
                                     </ul>
-                                </li>
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About Us
-                                </a>
-                                <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Admissions
-                                </a>
-                                <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-2">
-
-                                    <li><a class="dropdown-item" routerLink="admission">Admission Requirements</a></li>
-
-                                </ul>
-                            </li> -->
-
-                                <li class="nav-item dropdown d-none">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Media
-                                    </a>
-                                    <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-3">
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown d-none">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Student Affairs
-                                    </a>
-                                    <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-4">
-                                        <li class="">
-                                            <a class="dropdown-item" href="#">Student Life</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="dropdown-item" href="#">counseling and career</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">activities</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">get a student handbook</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">prgram log-in</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">e-library</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="dropdown-item" href="blog">blog</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item d-none">
-                                    <a class="nav-link" routerLink="student-affairs">student affairs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" routerLink="contactus">contact us</a>
+                                    <a class="nav-link" routerLink="contactus">About Us</a>
                                 </li>
-                                
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="contactus">Contact Us</a>
+                                </li>
+
                                 <li class="nav-item book-btn d-none">
                                     <a class="nav-link" href="">login</a>
                                 </li>
@@ -205,18 +197,16 @@
             </div>
         </div>
     </header>
-    
+
     </div>
 
     <div class="container-fluid custom-bg">
-        <div class="medical-journey" data-aos="fade-up"
-     data-aos-duration="1000">
+        <div class="medical-journey" data-aos="fade-up" data-aos-duration="1000">
             <p>Begin Your Medical Journey With our 5.5-Year MBBS Course</p>
         </div>
         <div class="row mt-3">
             <div class="col-md-12">
-                <div class="about-heading" data-aos="fade-right"
-     data-aos-duration="1500">
+                <div class="about-heading" data-aos="fade-right" data-aos-duration="1500">
                     <h2 class="mb-3"><span class="section-h-rect"></span>About MBBS Program
                     </h2>
                     <p>Our MBBS curriculum aims to produce doctors who are forward-thinking,
@@ -238,7 +228,7 @@
             </div>
         </div>
         <div class="enquirediv">
-        <a href="#!" class="enquirebtn">ENQUIRE NOW!</a>
+            <a href="#!" class="enquirebtn" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE NOW!</a>
         </div>
     </div>
 
@@ -246,17 +236,16 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="admission-heading">
-                    <h2 class="mb-3" data-aos="fade-up"
-     data-aos-duration="1500"><span class="section-h-rect"></span>Admission Process
+                    <h2 class="mb-3" data-aos="fade-up" data-aos-duration="1500"><span
+                            class="section-h-rect"></span>Admission Process
                     </h2>
-                    <p data-aos="fade-up"
-     data-aos-duration="2000">UIMS welcomes students of all diversity, irrespective of their race, age, gender, religion, or
+                    <p data-aos="fade-up" data-aos-duration="2000">UIMS welcomes students of all diversity, irrespective
+                        of their race, age, gender, religion, or
                         nationality. The registration window opens twice a year. The admission process could take six
                         to eight weeks, depending on the aspirant's response time in the application and selection
                         process.</p>
                     <div>
-                        <div class="tabs" data-aos="fade-up"
-     data-aos-duration="2000">
+                        <div class="tabs" data-aos="fade-up" data-aos-duration="2000">
                             <div class="tab">
                                 <input type="radio" id="rd1" name="rd">
                                 <label class="tab-label" for="rd1">Admissions Prerequisites and Requirements</label>
@@ -285,41 +274,36 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="admission-heading">
-                    <h2 class="mb-5" data-aos="fade-up"
-     data-aos-duration="1500"><span class="section-h-rect"></span>Admission Timeline
+                    <h2 class="mb-5" data-aos="fade-up" data-aos-duration="1500"><span
+                            class="section-h-rect"></span>Admission Timeline
                     </h2>
                     <div class="row justify-content-center">
-                    <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up"
-     data-aos-duration="1500">
-                        <img src="images/icon-one.png">
-                        <h4>Application Form</h4>
-                        <p>Submission Last Date <br>7th July, 2023</p>
-                        
-                    </div>   
-                    <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up"
-     data-aos-duration="1700">
-                        <img src="images/icon-one.png">
-                        <h4>Documents Submission </h4>
-                        <p>within 7 days of Confirmation <br>of Enrolment</p>
-                    </div>   
-                    <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up"
-     data-aos-duration="1900">
-                        <img src="images/icon-one.png">
-                        <h4>Payment</h4>
-                        <p> of 1st Semester Fee <br>31st July, 2023</p>
-                    </div>   
-                    <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up"
-     data-aos-duration="2100">
-                        <img src="images/icon-one.png">
-                        <h4>Confirmation of Enrolment</h4>
-                        <p>Within 5 days of receiving <br>Admission Offer Letter</p>
-                    </div>   
-                    <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up"
-     data-aos-duration="2300">
-                        <img src="images/icon-one.png">
-                        <h4>Additional Documents</h4>
-                        <p>Within 5 days of receiving request</p>
-                    </div>    
+                        <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up" data-aos-duration="1500">
+                            <img src="images/icon-one.png">
+                            <h4>Application Form</h4>
+                            <p>Submission Last Date <br>7th July, 2023</p>
+
+                        </div>
+                        <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up" data-aos-duration="1700">
+                            <img src="images/icon-one.png">
+                            <h4>Documents Submission </h4>
+                            <p>within 7 days of Confirmation <br>of Enrolment</p>
+                        </div>
+                        <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up" data-aos-duration="1900">
+                            <img src="images/icon-one.png">
+                            <h4>Payment</h4>
+                            <p> of 1st Semester Fee <br>31st July, 2023</p>
+                        </div>
+                        <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up" data-aos-duration="2100">
+                            <img src="images/icon-one.png">
+                            <h4>Confirmation of Enrolment</h4>
+                            <p>Within 5 days of receiving <br>Admission Offer Letter</p>
+                        </div>
+                        <div class="col-4 timelineicon text-center pb-5" data-aos="fade-up" data-aos-duration="2300">
+                            <img src="images/icon-one.png">
+                            <h4>Additional Documents</h4>
+                            <p>Within 5 days of receiving request</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,7 +312,7 @@
 
     <div class="split-container">
         <div class="red-half">
-            
+
             <div class=" container pt-5">
 
                 <div class="campus-slide-item">
@@ -337,84 +321,81 @@
 
                         <div class="row mt-2 mb-5">
 
-                            <h2 class="section-h c-w curriculumtext" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <h2 class="section-h c-w curriculumtext" data-aos="fade-up" data-aos-duration="1500">
                                 Curriculum
                             </h2>
 
                         </div>
                         <div class="row">
 
-                            <div class="col-md-3 card-main" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="col-md-3 card-main" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card curriculum-card">
                                     <div class="d-flex align-items-center justify-content-center">
-                                    <div class="years">Year I</div>
+                                        <div class="years">Year I</div>
                                     </div>
                                     <div class="card-body ">
                                         <h4 class="semester-heading">Semester 1, 2</h4>
                                         <p class="topics mb-0 pt-2">Topics:</p>
-                                            <ul class="custom-list">
-                                                <li>Anatomy</li>
-                                                <li>Biochemistry</li>
-                                                <li>Physiology</li>
-                                            </ul>
+                                        <ul class="custom-list">
+                                            <li>Anatomy</li>
+                                            <li>Biochemistry</li>
+                                            <li>Physiology</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 card-main" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="col-md-3 card-main" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card curriculum-card">
                                     <div class="d-flex align-items-center justify-content-center">
-                                    <div class="years">Year II & III</div>
+                                        <div class="years">Year II & III</div>
                                     </div>
                                     <div class="card-body ">
                                         <h4 class="semester-heading">Semester 3, 4, 5</h4>
                                         <p class="topics mb-0 pt-2">Topics:</p>
-                                            <ul class="custom-list">
-                                                <li>Community Medicine</li>
-                                                <li>Forensic Medicine</li>
-                                                <li>Pathology</li>
-                                            </ul>
-                                            <div class="viewmorelink">
-                                             <a href="#!">View More Topics</a>
-                                            </div>
+                                        <ul class="custom-list">
+                                            <li>Community Medicine</li>
+                                            <li>Forensic Medicine</li>
+                                            <li>Pathology</li>
+                                        </ul>
+                                        <div class="viewmorelink">
+                                            <a href="#!" data-bs-toggle="modal" data-bs-target="#semesterModal">View
+                                                More Topics</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 card-main" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="col-md-3 card-main" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card curriculum-card">
                                     <div class="d-flex align-items-center justify-content-center">
-                                    <div class="years">Year III, IV & V</div>
+                                        <div class="years">Year III, IV & V</div>
                                     </div>
                                     <div class="card-body ">
                                         <h4 class="semester-heading">Semester 6, 7, 8, 9</h4>
                                         <p class="topics mb-0 pt-2">Topics:</p>
-                                            <ul class="custom-list">
-                                                <li>OPD Practice</li>
-                                                <li>Clinical Posting</li>
-                                                <li>Dermatology Medicine</li>
-                                            </ul>
-                                             <div class="viewmorelink">
-                                             <a href="#!">View More Topics</a>
-                                            </div>
+                                        <ul class="custom-list">
+                                            <li>OPD Practice</li>
+                                            <li>Clinical Posting</li>
+                                            <li>Dermatology Medicine</li>
+                                        </ul>
+                                        <div class="viewmorelink">
+                                            <a href="#!" data-bs-toggle="modal" data-bs-target="#semesterModal">View
+                                                More Topics</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 card-main" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="col-md-3 card-main" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card curriculum-card">
                                     <div class="d-flex align-items-center justify-content-center">
-                                    <div class="years">Year V</div>
+                                        <div class="years">Year V</div>
                                     </div>
                                     <div class="card-body ">
                                         <h4 class="semester-heading">Semester 10,11</h4>
                                         <p class="topics mb-0 pt-2">Topics:</p>
-                                            <ul class="custom-list">
-                                                <li>Internship</li>
-                                                <li>National Exam Prep Sessions</li>
-                                            </ul>
+                                        <ul class="custom-list">
+                                            <li>Internship</li>
+                                            <li>National Exam Prep Sessions</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -429,12 +410,10 @@
 
     <div class="container-fluid custom-bg-litegrey">
         <div class="row align-items-center">
-            <div class="col-3" data-aos="fade-right"
-     data-aos-duration="1500">
+            <div class="col-3" data-aos="fade-right" data-aos-duration="1500">
                 <img src="images/fees.png">
             </div>
-            <div class="col-md-9" data-aos="fade-up"
-     data-aos-duration="1500">
+            <div class="col-md-9" data-aos="fade-up" data-aos-duration="1500">
                 <h2 class="mb-3">Fees and Scholarships</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy</p>
@@ -447,14 +426,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="admission-heading">
-                    <h2 class="mb-3" data-aos="fade-up"
-     data-aos-duration="1500"><span class="section-h-rect"></span>Frequently Asked Questions
+                    <h2 class="mb-3" data-aos="fade-up" data-aos-duration="1500"><span
+                            class="section-h-rect"></span>Frequently Asked Questions
                     </h2>
-                    <div class="accordionsdiv" data-aos="fade-up"
-     data-aos-duration="1500">
+                    <div class="accordionsdiv" data-aos="fade-up" data-aos-duration="1500">
                         <div class="accordion" id="accordionExample">
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -470,8 +447,7 @@
                                 </div>
                             </div>
                             <!-- Repeat the below accordion item structure for the remaining items -->
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -486,8 +462,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
@@ -503,8 +478,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
@@ -520,8 +494,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false"
@@ -537,8 +510,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -553,8 +525,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSeven" aria-expanded="false"
@@ -570,8 +541,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingEight">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseEight" aria-expanded="false"
@@ -587,8 +557,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingNine">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseNine" aria-expanded="false"
@@ -604,8 +573,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingTen">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -620,8 +588,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingEleven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseEleven" aria-expanded="false"
@@ -638,8 +605,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingTwelve">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwelve" aria-expanded="false"
@@ -655,8 +621,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingThirteen">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThirteen" aria-expanded="false"
@@ -672,8 +637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingFourteen">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFourteen" aria-expanded="false"
@@ -689,8 +653,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up"
-     data-aos-duration="1500">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
                                 <h2 class="accordion-header" id="headingFifteen">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFifteen" aria-expanded="false"
@@ -740,7 +703,7 @@
                             <div class="col-6 col-md-2 py-md-2 py-0">
                                 <h5 class="footer-heading">Study at UIMS</h5>
                                 <ul class="footer-menu">
-                                    
+
                                     <li>
                                         <a href="#!">About Us</a>
                                     </li>
@@ -758,7 +721,7 @@
                             <div class="col-6 col-md-2 py-md-2 py-0">
                                 <h5 class="footer-heading">Life at UIMS</h5>
                                 <ul class="footer-menu">
-                                    
+
                                     <li>
                                         <a href="#!">About Us</a>
                                     </li>
@@ -779,7 +742,7 @@
                             <div class="col-6 col-md-2 py-md-2 py-0">
                                 <h5 class="footer-heading">Faculty</h5>
                                 <ul class="footer-menu">
-                                    
+
                                     <li>
                                         <a href="#!">About Us</a>
                                     </li>
@@ -794,7 +757,7 @@
                             <div class="col-6 col-md-2 py-md-2 py-0">
                                 <h5 class="footer-heading">Financials</h5>
                                 <ul class="footer-menu">
-                                    
+
                                     <li>
                                         <a href="#!">About Us</a>
                                     </li>
@@ -835,7 +798,7 @@
                             <div class="col-6 col-md-2 py-md-2 py-0">
                                 <h5 class="footer-heading">Privacy Policy</h5>
                                 <ul class="footer-menu">
-                                    
+
                                     <li>
                                         <a href="#!">About Us</a>
                                     </li>
@@ -869,7 +832,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 </body>
 

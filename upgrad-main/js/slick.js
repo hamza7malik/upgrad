@@ -20,7 +20,7 @@ $slickElement.on(
 
 $(".center").slick({
   centerMode: true,
-  centerPadding: "100px",
+  // centerPadding: "100px",
   slidesToShow: 1,
   arrows: false,
   infinite: false,

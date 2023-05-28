@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upgrad | Home</title>
 
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://www.nureva.com/hs-fs/hub/403995/hub_generated/template_assets/1579793579671/combined-css-e65b227c4dca215b3ff6af459afd2060.css">
@@ -25,42 +24,55 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">ENQUIRE NOW</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="name" value="" class="form-control my-2" placeholder="Name">
+                        <input type="email" name="email" value="" class="form-control my-2" placeholder="Email">
+                        <input type="number" name="number" value="" class="form-control my-2" placeholder="Number">
+                        <p class="radiotext mb-0">Program of Interest</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Global MD
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option1">
+                            <label class="form-check-label" for="exampleRadios2">
+                                MBBS
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn btn-primary modal-btn d-block my-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- --------header--------- -->
     <header class="header">
         <div class="container">
             <div class="row mainrow">
-                <div class="col-md-2 logo-container">
+                <div class="col-2 logo-container">
                     <a class="navbar-brand" href="homepage.html">
                         <img alt="upgrad" src="images/logo.png" class="logo-dark">
                     </a>
                 </div>
-                <div class="col-md-10">
+                <div class="col-10">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsibleNavbar">
-                            <span></span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="33" height="25" viewBox="0 0 33 25">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
-                                        gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#fa5d22" />
-                                        <stop offset="0.486" stop-color="#fa5d22" />
-                                        <stop offset="1" stop-color="#fa8a22" />
-                                    </linearGradient>
-                                </defs>
-                                <g id="Group_7" data-name="Group 7" transform="translate(-3091.322 -3713)">
-                                    <g id="Group_6" data-name="Group 6" transform="translate(3091 3713)">
-                                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="4" cy="4" r="4"
-                                            transform="translate(0.322)" fill="url(#linear-gradient)" />
-                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="4" cy="4" r="4"
-                                            transform="translate(12.322)" fill="url(#linear-gradient)" />
-                                        <circle id="Ellipse_3" data-name="Ellipse 3" cx="4" cy="4" r="4"
-                                            transform="translate(24.322)" fill="url(#linear-gradient)" />
-                                    </g>
-                                </g>
-                            </svg>
-
+                            data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="mainMenu collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="navbar-nav d-flex align-items-center justify-content-center">
@@ -70,22 +82,7 @@
                                         study at uims
                                     </a>
                                     <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-1">
-                                        <li>
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1-1"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Overview
-                                            </a>
-                                            <ul class="dropdown-menu menu-level-2 dropdown-submenu"
-                                                aria-labelledby="navbarDropdown-1-1">
-                                                <li><a class="dropdown-item" routerLink="about">Vision, Mission &
-                                                        Values</a>
-                                                </li>
-                                                <li><a class="dropdown-item" routerLink="accrediations">Recognition and
-                                                        Accreditation</a></li>
-                                                <li><a class="dropdown-item" routerLink="accrediations">Vila Central
-                                                        Hospital</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a class="dropdown-item" href="campus">Overview</a></li>
                                         <li><a class="dropdown-item" href="campus">About Campus</a></li>
                                         <li><a class="dropdown-item" routerLink="partner">Partner with us</a></li>
                                     </ul>
@@ -110,70 +107,16 @@
                                         FACULTY
                                     </a>
                                     <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-5">
-                                        <li><a class="dropdown-item" routerLink="globalmd">Global MD</a></li>
-                                        <li><a class="dropdown-item" routerLink="mbbs">MBBS</a></li>
-                                        <li><a class="dropdown-item" routerLink="qualitypolicy">Quality Policy</a></li>
+                                        <li><a class="dropdown-item" href="global-md-program.html">Global MD</a></li>
+                                        <li><a class="dropdown-item" href="mbbs-program.html">MBBS</a></li>
+                                        <li><a class="dropdown-item" href="#!">Quality Policy</a></li>
                                     </ul>
-                                </li>
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About Us
-                                </a>
-                                <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Admissions
-                                </a>
-                                <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-2">
-
-                                    <li><a class="dropdown-item" routerLink="admission">Admission Requirements</a></li>
-
-                                </ul>
-                            </li> -->
-
-                                <li class="nav-item dropdown d-none">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Media
-                                    </a>
-                                    <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-3">
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown d-none">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Student Affairs
-                                    </a>
-                                    <ul class="dropdown-menu menu-level-1" aria-labelledby="navbarDropdown-4">
-                                        <li class="">
-                                            <a class="dropdown-item" href="#">Student Life</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="dropdown-item" href="#">counseling and career</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">activities</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">get a student handbook</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">prgram log-in</a>
-                                        </li>
-                                        <li class="d-none">
-                                            <a class="dropdown-item" href="#">e-library</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="dropdown-item" href="blog">blog</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item d-none">
-                                    <a class="nav-link" routerLink="student-affairs">student affairs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" routerLink="contactus">contact us</a>
+                                    <a class="nav-link" routerLink="contactus">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="contactus">Contact Us</a>
                                 </li>
 
                                 <li class="nav-item book-btn d-none">
@@ -215,13 +158,22 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-cont-wrap">
-                        <div class="banner-logo-container">
-                            <img class="banner-logo" src="/images/Group.png" alt="">
-                            <hr class="banner-hr">
+                        <div class="banner-logo-container" data-aos="fade-down" data-aos-duration="1000">
+                            <img class="banner-logo" src="images/banner-logo.png" alt="" />
+
                         </div>
-                        <h1>Redefining Medical Education for the Future</h1>
-                        <h2 class="d-none">Learn to Help.</h2>
-                        <a href="#ourcampus"><i class="fa fa-angle-double-down"></i></a>
+                        <div class="" data-aos="fade-up" data-aos-duration="1000">
+                            <hr class="banner-hr">
+                            <h1>Redefining Medical Education for the Future</h1>
+                            <h2 class="d-none">Learn to Help.</h2>
+                            <a href="#!" class="explore">Explore Our Courses</a>
+                            <!-- <a href="#ourcampus"><i class="fa fa-angle-double-down"></i></a> -->
+                        </div>
+                        <div class="enquirediv homeenquiry">
+                            <a href="#!" class="enquirebtnhome" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">ENQUIRE
+                                NOW!</a>
+                        </div>
                     </div>
 
                 </div>
@@ -283,16 +235,15 @@
         </div>
 
     </div>
-    <div class="section-whychooseus" id="ourcampus">
+    <div class="section-whychooseus pb-5" id="ourcampus">
         <div class="campus-slider container">
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row mt-5">
                         <div class="col-md-6 g-0 order-2 order-md-2">
                             <div class="campus-wrapper-slider">
-                                <div class="campus-slides section-image">
-                                    <div class="col" style="display: flex;
-                                    justify-content: end; padding: 0;">
+                                <div class="campus-slides">
+                                    <div class="col tabshome">
 
                                         <div class="tabs">
                                             <div class="tab" data-aos="fade-up" data-aos-duration="1000">
@@ -425,7 +376,7 @@
 
             </div>
         </div>
-        <div class="white-half" style="padding: 185px 0;">
+        <div class="white-halfhome">
         </div>
     </div>
 
@@ -514,7 +465,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9 g-0">
+                        <div class="col-md-9 g-0 spacingmob">
                             <div class="campus-wrapper-slider pt-5" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="campus-slides section-image img2"
                                     style="background-image: url(./images/sec-7-img-2.png); ">
@@ -820,7 +771,22 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        // Add an event listener to each dropdown menu item
+        var dropdownItems = document.querySelectorAll('.dropdown');
 
+        dropdownItems.forEach(function (item) {
+            item.addEventListener('mouseenter', function () {
+                // Add 'show' class to the dropdown menu when mouse enters
+                this.querySelector('.dropdown-menu').classList.add('show');
+            });
+
+            item.addEventListener('mouseleave', function () {
+                // Remove 'show' class from the dropdown menu when mouse leaves
+                this.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    </script>
 
 </body>
 
