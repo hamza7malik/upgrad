@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upgrad</title>
+    <title>Upgrad | Home</title>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
@@ -17,21 +17,20 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
-    <link href="https://db.onlinewebfonts.com/c/3d85dc16e94da9358d451666fdbc3398?family=Circular+Medium" rel="stylesheet" type="text/css"/>
-
-
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href="https://db.onlinewebfonts.com/c/3d85dc16e94da9358d451666fdbc3398?family=Circular+Medium"
+        rel="stylesheet" type="text/css" />
+    <link href="https://db.onlinewebfonts.com/c/02d8f1743ede250c7c9865f1574d7cc6?family=Circular+Book" rel="stylesheet"
+        type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- --------header--------- -->
     <header class="header">
         <div class="container">
-            <div class="row" style="  display: flex; height: 100px;
-        justify-content: center;
-        align-items: center;">
-                <div class="col-md-2 logo-container" style="padding: 8px;">
-                    <a class="navbar-brand" href="index.html">
+            <div class="row mainrow">
+                <div class="col-md-2 logo-container">
+                    <a class="navbar-brand" href="homepage.html">
                         <img alt="upgrad" src="images/logo.png" class="logo-dark">
                     </a>
                 </div>
@@ -64,7 +63,7 @@
 
                         </button>
                         <div class="mainMenu collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav d-flex align-items-center justify-content-center">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -176,11 +175,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" routerLink="contactus">contact us</a>
                                 </li>
-                                <li class="nav-item book-btn ">
 
-                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#applynow">apply
-                                        now</a>
-                                </li>
                                 <li class="nav-item book-btn d-none">
                                     <a class="nav-link" href="">login</a>
                                 </li>
@@ -200,6 +195,11 @@
                                             </form>
                                         </div>
                                     </div>
+                                </li>
+                                <li class="nav-item book-btn ">
+
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#applynow">apply
+                                        now</a>
                                 </li>
                             </ul>
                         </div>
@@ -236,45 +236,42 @@
                 <div class="container-fluid">
                     <div class="row mt-5">
 
-                        <h2 class="wow fadeIn section-h" data-wow-duration="1.2s"><span
+                        <h2 class="section-h" data-aos="fade-up" data-aos-duration="1000"><span
                                 class="section-h-rect"></span>About upGrad
                             Institute of Medical
                             Sciences
                         </h2>
-                        <div class="col-md-6 g-0 order-2 order-md-2">
-                            <div class="campus-wrapper-slider pt-5">
-                                <div class="campus-slides section-image"
-                                    style="background-image: url(./images/sec_1.png); border-radius: 16px;">
-
-                                </div>
-                                <!-- <img src="/images/sec_1.png" alt=""> -->
-                            </div>
-                        </div>
-                        <div class="col-pad-right col-md-6 m-auto order-1 order-md-1 pb-5">
-                            <div class="content-dark">
-
-
-
-                                <p style="margin: 32px 0;">upGrad Institute of Medical Sciences is a premier private
-                                    medical school situated in the beautiful city of Port Vila, capital of Vanuatu.
-                                    <br><br>
-                                    Our mission is to offer students affordable and high-quality medical education.
-                                    We
-                                    provide comprehensive degree programs including
+                        <div class="col-md-6 order-1 order-md-1 pb-5">
+                            <div class="content-dark" data-aos="fade-right" data-aos-duration="1000">
+                                <p class="parafirst">upGrad Institute of Medical Sciences is a premier private
+                                    medical school situated in the beautiful city of Port Vila, capital of Vanuatu.</p>
+                                <p> Our mission is to offer students affordable and high-quality medical education.
+                                    We provide comprehensive degree programs including</p>
                                 <ul>
                                     <li> Doctor of Medicine (MD) </li>
                                     <li>Bachelor of Medicine, Bachelor of Surgery (MBBS) </li>
                                 </ul>
-
-
-                                At UIMS, we blend technological advancements with a standardized curriculum,
-                                aiming
-                                to revolutionize medical education and make it accessible, effective, and
-                                impactful.
+                                <p> At UIMS, we blend technological advancements with a standardized curriculum,
+                                    aiming to revolutionize medical education and make it accessible, effective, and
+                                    impactful.
                                 </p>
 
                                 <div class="btn-1">
-                                    <a href="campus">Know More about our Campus!</a>
+                                    <a href="#!">Know More about our Campus!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 g-0 order-2 order-md-2">
+                            <div class="row" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="col-md-8">
+                                    <img class="anotomageimg" src="images/AnatomageTable.png">
+                                    <p class="statep">State of Art</p>
+                                    <h6 class="digitalh">Digital Labs</h6>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="clinicallyh">Clinically</h6>
+                                    <p class="earlyp">Early Exposure</p>
+                                    <img class="clicniallyimg" src="images/Clinically.png">
                                 </div>
                             </div>
                         </div>
@@ -286,13 +283,11 @@
         </div>
 
     </div>
-    <div class="section-our-campus pb-3" id="ourcampus" style="background-color: #E8E7E6; width: 100%;">
-        <div class="campus-slider container pt-5">
+    <div class="section-whychooseus" id="ourcampus">
+        <div class="campus-slider container">
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row mt-5">
-
-
                         <div class="col-md-6 g-0 order-2 order-md-2">
                             <div class="campus-wrapper-slider">
                                 <div class="campus-slides section-image">
@@ -300,15 +295,16 @@
                                     justify-content: end; padding: 0;">
 
                                         <div class="tabs">
-                                            <div class="tab">
+                                            <div class="tab" data-aos="fade-up" data-aos-duration="1000">
                                                 <input type="radio" id="rd1" name="rd">
                                                 <label class="tab-label" for="rd1">Global Classroom</label>
                                                 <div class="tab-content">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                                                    facilis.
+                                                    We will have technological tools for learners to get an early access
+                                                    to clinics and clinical practices. This will be extended to
+                                                    initiatives like Student-Run.
                                                 </div>
                                             </div>
-                                            <div class="tab">
+                                            <div class="tab" data-aos="fade-up" data-aos-duration="1000">
                                                 <input type="radio" id="rd2" name="rd">
                                                 <label class="tab-label" for="rd2">Campus Immersion </label>
                                                 <div class="tab-content">
@@ -316,7 +312,7 @@
                                                     aut.
                                                 </div>
                                             </div>
-                                            <div class="tab">
+                                            <div class="tab" data-aos="fade-up" data-aos-duration="1000">
                                                 <input type="radio" id="rd3" name="rd">
                                                 <label class="tab-label" for="rd3">Clinical Studies </label>
                                                 <div class="tab-content">
@@ -324,7 +320,7 @@
                                                     aut.
                                                 </div>
                                             </div>
-                                            <div class="tab">
+                                            <div class="tab" data-aos="fade-up" data-aos-duration="1000">
                                                 <input type="radio" id="rd4" name="rd">
                                                 <label class="tab-label" for="rd4">Experienced Global Faculty </label>
                                                 <div class="tab-content">
@@ -339,16 +335,15 @@
                                 <!-- <img src="/images/sec_1.png" alt=""> -->
                             </div>
                         </div>
-                        <div class="col-md-6 order-1 order-md-1 ">
+                        <div class="col-md-6 order-1 order-md-1 " data-aos="fade-right" data-aos-duration="1000">
 
-                            <h2 class="wow fadeIn section-h" data-wow-duration="1.2s">
+                            <h2 class="section-h">
                                 Why Choose Us?
                             </h2>
                             <div class="content-dark">
-                                <p class="mt-3" style="width: 60%;">Thrive in the ever-evolving healthcare
-                                    field with our
-                                    innovative pedagogy, offering
-                                    hands-on training and early clinical exposure to our students.</p>
+                                <p class="mt-3">Thrive in the ever-evolving healthcare field with
+                                    our innovative pedagogy, offering hands-on training and early clinical exposure to
+                                    our students.</p>
                             </div>
                         </div>
 
@@ -367,24 +362,22 @@
 
                     <div class="container-fluid">
 
-                        <div class="row mt-5 ">
+                        <div class="row mt-5 pb-4">
 
-                            <h2 class="wow fadeIn section-h c-w" data-wow-duration="1.2s">
+                            <h2 class="section-h c-w" data-aos="fade-up" data-aos-duration="1000">
                                 Our Courses
                             </h2>
 
-                            <p class="c-w">upGrad Institute of Medical Sciences is committed to its core mission to
-                                nurture
-                                a diverse
-                                group of leaders in clinical care and biomedical enquiry.</p>
-
+                            <p class="c-w" data-aos="fade-up" data-aos-duration="1000">upGrad Institute of Medical
+                                Sciences is committed to its core mission to
+                                nurture a diverse group of leaders in clinical care and biomedical enquiry.</p>
 
                         </div>
-                        <div class="row" style="justify-content: space-between; margin-bottom: -289px; ">
+                        <div class="row coursesdiv">
 
                             <div class="col-md-6">
 
-                                <div class="card p-0">
+                                <div class="card p-0" data-aos="fade-up" data-aos-duration="1000">
                                     <img class="card-img-top" src="./images/card-img-1.png" alt="Card image cap">
                                     <div class="card-body ">
                                         <h4 class="card-title">Global MD Program</h4>
@@ -405,7 +398,7 @@
                             </div>
                             <div class="col-md-6">
 
-                                <div class="card p-0 ">
+                                <div class="card p-0 " data-aos="fade-up" data-aos-duration="1000">
                                     <img class=" card-img-top" src="./images/card-img-1.png" alt="Card image cap">
                                     <div class="card-body ">
                                         <h4 class="card-title">Global MD Program</h4>
@@ -436,12 +429,12 @@
         </div>
     </div>
 
-    <div class="section-our-campus  " id="ourcampus" style="background-color: #ffffff; width: 100%; ">
+    <div class="section-hear" id="ourcampus">
         <div class="campus-slider container">
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row mt-5 mb-5">
-                        <h2 class="wow fadeIn section-h" data-wow-duration="1.2s"><span
+                        <h2 class="section-h" data-aos="fade-up" data-aos-duration="1000"><span
                                 class="section-h-rect"></span>Hear from our Dean
                         </h2>
                     </div>
@@ -449,56 +442,43 @@
             </div>
         </div>
     </div>
-    <div class="section-our-campus pb-3 " id="ourcampus" style="background-color: #6F8197;  width: 100%;">
+    <div class="section-after-hear" id="ourcampus">
         <div class="campus-slider container">
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row mt-5">
-
-
-                        <div class="col-md-6 g-0 order-2 order-md-2">
-                            <div class="image-container">
-
-                                <img src="./images/sec-3.png" alt="">
-                            </div>
-                            <div class="campus-wrapper-slider pt-5">
-                                <!-- <div class="campus-slides section-image"
-                                        style="background-image: url(./images/sec-3.png); border-radius: 16px;">
-
-                                    </div> -->
-                                <!-- <img src="/images/sec_1.png" alt=""> -->
-                            </div>
-                        </div>
-                        <div class="col-pad-right col-md-6 m-auto order-1 order-md-1 pb-5">
-                            <div class="content-dark">
-
-
-
-                                <p class="c-w" style="margin: 32px 0;">I take this opportunity to welcome you to the
+                        <div class="col-md-8 pb-5">
+                            <div class="" data-aos="fade-right" data-aos-duration="1000">
+                                <p class="c-w">I take this opportunity to welcome you to the
                                     upGrad
-                                    Institute of Medical Sciences, Port Vila, Vanuatu.  <br><br>
-                                    Located in the picturesque tourist paradise of Port Vila, UIMS aims to train
+                                    Institute of Medical Sciences, Port Vila, Vanuatu.</p>
+                                <p class="c-w"> Located in the picturesque tourist paradise of Port Vila, UIMS aims to
+                                    train
                                     medical students from all over the world, especially from Asia, the Asia-Pacific
                                     region and the Australian continent. In the long run, this medical school will
                                     surely augment the healthcare facilities available in this region, so also in
-                                    retaining medical talent here.  <br><br>
-                                    With the backdrop of our Vision and Mission Statement, UIMS has the best and the
+                                    retaining medical talent here.</p>
+                                <p class="c-w">With the backdrop of our Vision and Mission Statement, UIMS has the best
+                                    and the
                                     most experienced international medical teachers as a part of our full-time
                                     faculty, and also one of the most reputed clinicians from all over the world as
                                     our Adjunct / Part-time faculty. This ensures optimal delivery of a carefully
                                     drafted medical curriculum approved by the United States Medical Licensing
-                                    Examination (USMLE), USA, and the National Medical Commission (NMC – the
+                                    Examination (USMLE), USA, and the National Medical Commission (NMC - the
                                     erstwhile MCI), India. We will have an optimal mix of the traditional didactic
                                     system of medical education and the Problem Based Learning methodology, which
                                     eliminates the monotony of lecture delivery while ensuring an active involvement
                                     of the students in the learning process. The assessment process includes both
                                     summative and formative assessments; self-assessment by students is also
-                                    incorporated. <br><br>
-                                    Read more
-
-                                </p>
+                                    incorporated.</p>
+                                <a href="#!" class="readmorebtn c-w "><u>Read more</u></a>
 
 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-container" data-aos="fade-left" data-aos-duration="1000">
+                                <img src="./images/sec-3.png" alt="">
                             </div>
                         </div>
 
@@ -508,16 +488,14 @@
 
         </div>
     </div>
-    <div class="section-our-campus pb-5 pt-5 " id="ourcampus" style="background-color: #8A99AB; width: 100%; ">
+    <div class="section-address pb-4 pt-4 " id="ourcampus">
         <div class="campus-slider container">
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row ">
-                        <p style="color: #EED5AE !important; margin: 0%;">Dr (Lt Col) Vivek Lal, M.D., F.Cl.R. <br>
-                            DEAN -
-                            upGrad Institute
-                            of Medical Sciences,
-                            Port Vila, Vanuatu</p>
+                        <p class="addressp" data-aos="fade-up" data-aos-duration="1000">Dr (Lt Col) Vivek Lal, M.D.,
+                            F.Cl.R. <br>DEAN
+                            - upGrad Institute of Medical Sciences, Port Vila, Vanuatu</p>
                     </div>
                 </div>
             </div>
@@ -528,38 +506,19 @@
         <div class="campus-slider">
             <div class="campus-slide-item">
                 <div class="container-fluid">
-                    <div class="row mt-5">
-
-
-                        <div class="col-md-3 g-0 order-2 order-md-2">
-                            <div class="campus-wrapper-slider pt-5">
-                                <div class="campus-slides section-image"
-                                    style="background-image: url(./images/sec-7-img-1.png); border-radius: 16px;">
-
+                    <div class="row mt-3 pb-5">
+                        <div class="col-md-3 g-0">
+                            <div class="campus-wrapper-slider pt-5" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="campus-slides section-image img1"
+                                    style="background-image: url(./images/sec-7-img-1.png); ">
                                 </div>
-                                <!-- <img src="/images/sec_1.png" alt=""> -->
                             </div>
                         </div>
-                        <div class="col-md-9 g-0 order-2 order-md-2">
-                            <div class="campus-wrapper-slider pt-5">
-                                <div class="campus-slides section-image" style="background-image: url(./images/sec-7-img-2.png); border-radius: 16px;   position: relative;
-                                 
-                                        background-size: cover;
-                                        background-position: center;
-                                        ">
-
-
-                                    <div class="card p-0" style=" position: absolute;
-                                 top: 62px;
-                                    left: 313px;
-                                    right: 0;
-                                    margin: auto;
-                                    width: 500px; /* Adjust the width of the card */
-                                 border-radius: 0;
-                                 border: none;
-                                    background-color: white;
-                                    padding: 20px;">
-
+                        <div class="col-md-9 g-0">
+                            <div class="campus-wrapper-slider pt-5" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="campus-slides section-image img2"
+                                    style="background-image: url(./images/sec-7-img-2.png); ">
+                                    <div class="card p-0 cardabout">
                                         <div class="card-body ">
                                             <h4 class="card-title">About Port Vila</h4>
                                             <p class="c-fade p-small mt-3 mb-3" style="font-size: 14px;">Our 6-year
@@ -598,14 +557,15 @@
             <div class="campus-slide-item">
                 <div class="container-fluid">
                     <div class="row mt-5">
-                        <h2 class="wow fadeIn section-h" data-wow-duration="1.2s"><span
+                        <h2 class="section-h" data-aos="fade-up" data-aos-duration="1000"><span
                                 class="section-h-rect"></span>Blogs and Articles
                         </h2>
                         <div class="col-md-12 g-0 order-2 order-md-2">
                             <div class="campus-wrapper-slider pt-5">
-                                <div class=" ">
+                                <div class="">
                                     <div class="slider-wrapper">
-                                        <section class="center slider nu-image-slider">
+                                        <section class="center slider nu-image-slider" data-aos="fade-up"
+                                            data-aos-duration="1000">
 
                                             <div>
                                                 <div class="image-caption-wrapper">
@@ -613,28 +573,27 @@
                                                     <!-- <span class="image-caption">I'm a little feature 2...</span> -->
                                                     <div class="text-box">
                                                         <div class="text-box-content darkXXX">
-                                                            <h2>Investigating the root causes of the global health
+                                                            <p class="authortext">PAUL FARMER | June 10, 2020</p>
+                                                            <h2 class="postheading">Investigating the root causes of the
+                                                                global health
                                                                 crisis</h2>
-                                                            <p>At the end of almost a decade spent in teaching hospitals
-                                                                and
-                                                                clinics, most (we hope all) physicians have honed their
-                                                                clinical
-                                                                acumen by focusing on the care of the patient who is
-                                                                right in front
-                                                                of them. Perhaps this is as it should be: as patients,
-                                                                we don’t want
-                                                                our doctors (or nurses or social workers) distracted by
-                                                                “outside”
-                                                                considerations such as the suffering or concerns of
-                                                                other patients
-                                                                not there in the exam room or...</p>
-
-
-
+                                                            <p class="postparaph">At the end of almost a decade spent in
+                                                                teaching hospitals
+                                                                and clinics, most (we hope all) physicians have honed
+                                                                their
+                                                                clinical acumen by focusing on the care of the patient
+                                                                who is right in front of them. Perhaps this is as it
+                                                                should be:
+                                                                as patients, we don't want our doctors (or nurses or
+                                                                social workers) distracted by “outside” considerations
+                                                                such as the
+                                                                suffering or concerns of other patients not there in the
+                                                                exam room or...</p>
+                                                            <div class="btn-1">
+                                                                <a href="#!">Read Story</a>
+                                                            </div>
                                                         </div>
-                                                        <div class="btn-1">
-                                                            <a href="campus">Know More</a>
-                                                        </div>
+
                                                     </div>
 
                                                 </div>
@@ -646,23 +605,25 @@
                                                     <!-- <span class="image-caption">I'm a little feature 2...</span> -->
                                                     <div class="text-box">
                                                         <div class="text-box-content darkXXX">
-                                                            <h2>Investigating the root causes of the global health
+                                                            <p class="authortext">PAUL FARMER | June 10, 2020</p>
+                                                            <h2 class="postheading">Investigating the root causes of the
+                                                                global health
                                                                 crisis</h2>
-                                                            <p>At the end of almost a decade spent in teaching hospitals
-                                                                and
-                                                                clinics, most (we hope all) physicians have honed their
-                                                                clinical
-                                                                acumen by focusing on the care of the patient who is
-                                                                right in front
-                                                                of them. Perhaps this is as it should be: as patients,
-                                                                we don’t want
-                                                                our doctors (or nurses or social workers) distracted by
-                                                                “outside”
-                                                                considerations such as the suffering or concerns of
-                                                                other patients
-                                                                not there in the exam room or...</p>
+                                                            <p class="postparaph">At the end of almost a decade spent in
+                                                                teaching hospitals
+                                                                and clinics, most (we hope all) physicians have honed
+                                                                their
+                                                                clinical acumen by focusing on the care of the patient
+                                                                who is
+                                                                right in front of them. Perhaps this is as it should be:
+                                                                as patients,
+                                                                we don't want our doctors (or nurses or social workers)
+                                                                distracted by
+                                                                “outside” considerations such as the suffering or
+                                                                concerns of
+                                                                other patients not there in the exam room or...</p>
                                                             <div class="btn-1">
-                                                                <a href="campus">Know More</a>
+                                                                <a href="#!">Read Story</a>
                                                             </div>
 
 
@@ -709,61 +670,138 @@
     <footer class="footer p-0">
         <div class="">
             <div class="row">
-                <div class="col-md-2 bg-white order-1 order-md-1">
-                    <a href="index.html" class="footer-logo">
-                        <img alt="upgrad" src="./images/logo.png" class="wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-md-3 bg-white order-1 order-md-1 py-2">
+                    <a href="homepage.html" class="footer-logo">
+                        <img alt="upgrad" src="./images/footer-logo.png" class="wow fadeIn" data-wow-delay="0.5s">
                     </a>
+                    <div class="px-3 addr">
+                        <p>4604, Amna Tower, Al Habtoor City, Dubai - UAE</p>
+                        <p>ucimeds@gmail.com</p>
+                        <p>+917144219103</p>
+                    </div>
 
                 </div>
-                <div class="col-md-10 order-3 order-md-2" style="background-color: #6F8197;">
-                    <div class="footer-center">
-                        <div>
-                            <ul class="footer-menu wow fadeIn" data-wow-delay="0.8s">
-                                <li>
-                                    <a routerLink="about">
-                                        <p class="c-w">About Us</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="pedagogy">
-                                        <p class="c-w">Why upGrad</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="globalmd">
-                                        <p class="c-w">Academics</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="admission">
-                                        <p class="c-w">Admissions</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="contactus">
-                                        <p class="c-w">Contact Us</p>
-                                    </a>
-                                </li>
-                                <!-- <li>
-                                        <a routerLink="privacypolicy">Privacy Policy</a>
-                                    </li> -->
-                            </ul>
+                <div class="col-md-9 order-3 order-md-2" style="background-color: #6F8197;">
+                    <div class="footer-center px-md-5 px-2 py-2 pt-4">
+                        <div class="row">
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">Study at UIMS</h5>
+                                <ul class="footer-menu">
+
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Admissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">Life at UIMS</h5>
+                                <ul class="footer-menu">
+
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Why upGrad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Admissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">Faculty</h5>
+                                <ul class="footer-menu">
+
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Why upGrad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">Financials</h5>
+                                <ul class="footer-menu">
+
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Why upGrad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Admissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">About UIMS</h5>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Why upGrad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Admissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-2 py-md-2 py-0">
+                                <h5 class="footer-heading">Privacy Policy</h5>
+                                <ul class="footer-menu">
+
+                                    <li>
+                                        <a href="#!">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Why upGrad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Admissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div>
-                            <!-- <ul class="social-links">
-                                    <li class="wow fadeIn" data-wow-delay="0.8s">
-                                        <a href="" target="_blank"> <i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-delay="1s">
-                                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-delay="1.3s">
-                                        <a href="" target="_blank"> <i class="fab fa-youtube"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-delay="1.5s">
-                                        <a href="" target="_blank"> <i class="fab fa-whatsapp"></i></a>
-                                    </li>
-                                </ul> -->
                         </div>
 
                     </div>
@@ -778,11 +816,10 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="js/slick.js"></script>
-    <!-- <script src="js/jquery.easeScroll.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <Script src="js/wow.js"></Script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
