@@ -4257,17 +4257,16 @@ a.inquiry-trigger {
   /* main menu block */
   .mainMenu {
     background: #003f8e;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
     height: 100vh !important;
     width: 100%;
-    display: table;
     text-align: center;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: scale(0);
+    /* transform: scale(0); */
   }
 
   header .navbar-nav .menu-level-1 .dropdown-item,
@@ -4301,7 +4300,7 @@ a.inquiry-trigger {
     vertical-align: middle;
   }
 
-  .mainMenu li {
+  /* .mainMenu li {
     padding: 8px 0;
     transition: all 400ms 510ms;
     opacity: 0;
@@ -4327,7 +4326,7 @@ a.inquiry-trigger {
 
   .mainMenu a.suBtn {
     color: #fff;
-  }
+  } */
 
   /* sign up button */
   .suBtn {
@@ -4710,7 +4709,7 @@ a.inquiry-trigger {
   }
 
   nav.navbar.navbar-expand-lg.navbar-dark {
-    padding: 20px 0;
+    padding: 0px 0;
     position: unset;
   }
 
@@ -4818,11 +4817,11 @@ a.inquiry-trigger {
   background-color: #f63d49;
   padding: 20px;
   border-radius: 20px 0px 20px 0px;
-  width: 50%;
+  width: 65%;
   text-align: center;
-  margin-top: -80px;
+  margin-top: -90px;
   position: absolute;
-  right: 160px;
+  right: 0px;
 }
 
 .medical-journey p {
@@ -5034,7 +5033,10 @@ a.inquiry-trigger {
 }
 
 .enquirediv {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  right: -48px;
+  transform: translateY(-50%);
 }
 
 .enquirebtn {
@@ -5049,8 +5051,9 @@ a.inquiry-trigger {
   transform: rotate(270deg);
   padding: 8px 15px;
   position: absolute;
-  right: -200px;
-  top: -170px;
+  right: 0;
+  top: 0;
+  width: 143px;
 }
 
 .enquirebtn:hover {
@@ -5327,8 +5330,9 @@ a.inquiry-trigger {
   transform: rotate(270deg);
   padding: 8px 15px;
   position: absolute;
-  right: -728px;
-  top: -170px;
+  right: 0px;
+  top: 0px;
+  width: 143px;
 }
 
 #exampleModal .modal-title {
@@ -5398,4 +5402,11 @@ a.inquiry-trigger {
   display: flex;
   justify-content: end;
   padding: 0;
+}
+.medicaldiv {
+  position: relative;
+}
+.navbar-toggler {
+  background: #f5333f !important;
+  padding: 5px !important;
 }
