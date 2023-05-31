@@ -5410,3 +5410,19 @@ a.inquiry-trigger {
   background: #f5333f !important;
   padding: 5px !important;
 }
+
+/* CSS 30-05-23 */
+.hero-cont-wrap {
+	height: 90vh !important;
+}
+.explore {
+	padding: 13px 20px !important;
+}
+.hero-cont-wrap .banner-hr {
+    width: 50% !important;
+}
+.enquirebtnhome {
+    color: #e95454 !important;
+    background: #fff !important;
+    border-radius: 5px 5px 0px 0px !important;
+}
